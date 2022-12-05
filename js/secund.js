@@ -10,7 +10,7 @@ start.addEventListener('click', function () {
         start.innerHTML = 'stop'
         tabsSpan.classList.add('active')
         let i = 0
-        setTimeout(() => stopWatch(this, i), 100)
+        setTimeout(() => stopWatch(this, i), 1000)
     }
 
     else if (start.innerHTML == 'stop') {
@@ -46,7 +46,7 @@ function stopWatch(el, i) {
             stopSecond.innerHTML++
         }
 
-        setTimeout(() => stopWatch(el, i), 100)
+        setTimeout(() => stopWatch(el, i), 1000)
     }
 }
 
